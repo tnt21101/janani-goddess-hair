@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JANANI | The Weightless Ritual for Fuller-Looking Hair</title>
+  <meta name="description" content="Join the free JANANI Founding List for 48-hour early access, 20% off your first order, beta-testing opportunities, and the Goddess Hair Ritual Guide." />
+  <meta name="theme-color" content="#4B0F18" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%234B0F18'/%3E%3Cpath fill='%23C59A4A' d='M12 3c.5 5.6 3.4 8.5 9 9-5.6.5-8.5 3.4-9 9-.5-5.6-3.4-8.5-9-9 5.6-.5 8.5-3.4 9-9z'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Jost:wght@300;400;500;600&amp;family=Pinyon+Script&amp;display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="content.js"></script>
+  <script>
+    (function () {
+      var fallback = (window.JANANI && window.JANANI.ui.theme.default) || "light";
+      var theme = fallback;
+      try {
+        var saved = localStorage.getItem("janani-theme");
+        if (saved === "light" || saved === "dark") theme = saved;
+        else if (fallback === "system") theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      } catch (error) {}
+      document.documentElement.setAttribute("data-theme", theme === "dark" ? "dark" : "light");
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div id="root"></div>
+
+  <form class="netlify-blueprint" name="waitlist" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field" aria-hidden="true">
+    <input type="hidden" name="form-name" value="waitlist" />
+    <input type="email" name="email" tabindex="-1" />
+    <input type="hidden" name="source" />
+    <input type="hidden" name="traffic_source" />
+    <input type="hidden" name="utm_source" />
+    <input type="hidden" name="utm_medium" />
+    <input type="hidden" name="utm_campaign" />
+    <input type="hidden" name="utm_term" />
+    <input type="hidden" name="utm_content" />
+    <input type="hidden" name="landing_page" />
+    <input type="hidden" name="device_type" />
+    <input type="text" name="bot-field" tabindex="-1" />
+  </form>
+
+  <form class="netlify-blueprint" name="founding-feedback" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field" aria-hidden="true">
+    <input type="hidden" name="form-name" value="founding-feedback" />
+    <input type="hidden" name="frustration" />
+    <input type="hidden" name="signup_location" />
+    <input type="hidden" name="source" />
+    <input type="hidden" name="traffic_source" />
+    <input type="hidden" name="utm_source" />
+    <input type="hidden" name="utm_medium" />
+    <input type="hidden" name="utm_campaign" />
+    <input type="hidden" name="utm_term" />
+    <input type="hidden" name="utm_content" />
+    <input type="hidden" name="landing_page" />
+    <input type="hidden" name="device_type" />
+    <input type="text" name="bot-field" tabindex="-1" />
+  </form>
+
+  <script src="https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.production.min.js" crossorigin></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="form-utils.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
